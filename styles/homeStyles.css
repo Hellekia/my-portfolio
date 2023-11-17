@@ -1,0 +1,296 @@
+body{
+    width: 98vw;
+    box-sizing: border-box;
+}
+
+.homePage{
+    width: 100%;
+    height: fit-content;
+    background-image: url('/assets/pexels-designecologist-pink-photo1779487.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.navigation{
+    width: 100%;
+    box-sizing: border-box;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    flex: 1;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    flex: 3;
+}
+
+.menuItem{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.searchSection{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchSection input{
+    width: 45%;
+    height: 30px;
+    border-radius: 15px;
+    min-width: 250px;
+}
+
+.searchSection img{
+    position: relative;
+    right: 40px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+}
+ 
+.someIntro{
+    padding: 30px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.someIntro .txt{
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.intro1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+
+.intro1 .txt{
+    font-size: 30px;
+    color: white;
+    font-family:fantasy;
+}
+
+.introSection{
+    box-sizing: border-box;
+    padding: 50px 10px 20px 10px;
+    width: 100%;
+    height: fit-content;
+    font-size: 17px;
+    color: white;
+    text-align:justify;
+}
+
+.actionButtons{
+    box-sizing: border-box;
+    padding: 50px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.actionButton{
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 20px;
+    border: solid 1px rgb(255, 255, 255, 0.4);
+    border-radius: 3px;
+    background-color: rgb(000, 000, 000, 0.2);
+    color: white;
+    font-size: 18 px;
+}
+
+.actionButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.section2{
+    width: 100%;
+    height: fit-content;
+}
+
+.services{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 60px;
+    padding: 30px 10px;
+}
+
+.services .serviceItem{
+    width: fit-content;
+    height: fit-content;
+    border: solid 1px lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px black;
+    background-image: linear-gradient(to top right, teal, purple);
+    color: white;
+}
+
+
+
+#corousel{
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+
+#corousel img{
+    display: none;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+}
+
+#corousel img[class='active']{
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {opacity: .8;}
+    to {opacity: 1;}    
+}
+
+
+.nav{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav *{
+    z-index: 10;
+    background-color: black;
+}
+
+#desc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+#dots{
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+}
+
+#dots .dot{
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#dots .active{
+    background-color: white;
+}
+
+
+.section4{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px 50px;
+    flex-wrap: wrap;
+}
+
+.section4 .someDetails{
+    flex: 4;
+    box-sizing: border-box;
+    color: teal;
+    font-size: 18px;
+    text-align: justify;
+    min-width: 300px;
+    padding: 10px;
+}
+
+.section4 .sectionImage{
+    flex-wrap: 1;
+}
+
+.section4 .sectionImage img{
+    width:250px;
+}
+
+
+.socialSection{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.socialSection .socials{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px 30px;
+}
+
+.appFooter{
+    width: 100%;
+    height: 300px;
+    background-color: teal;
+}
